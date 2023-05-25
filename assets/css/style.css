@@ -54,7 +54,6 @@ body {
 .intro-name {
     display: flex;
     justify-content: center;
-
     font-family: 'Playfair Display';
     font-size: 64px;
     font-weight: lighter;
@@ -65,11 +64,27 @@ body {
 .intro-welcome {
     display: flex;
     justify-content: center;
-
     font-family: 'Playfair Display';
     font-weight: lighter;
     letter-spacing: 0.3em;
 }
+
+.typing-word-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.typing-word-container p {
+    font-size: 22px;
+    margin: 0;
+}
+
+
+
+
+
+
 
 .photo-container {
     display: flex;
@@ -94,20 +109,20 @@ body {
     padding: 60px 0;
 }
 
-.text-container {
+.about-text-container {
     width: 36rem;
 }
 
-.text-container p {
+.about-text-container p {
     margin: 1em 0;
 
 }
 
-.text-container :first-child {
+.about-text-container :first-child {
     margin-top: 0;
 }
 
-.text-container :last-child {
+.about-text-container :last-child {
     margin-bottom: 0;
 }
 

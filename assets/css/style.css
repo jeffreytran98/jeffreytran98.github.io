@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 999; /* Stay on top of other things on the page*/
+    background-color: #535e64;
+}
+
+
+.site-section {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Allows justify-content: center to center it (left to right) */ 
+    justify-content: center; /* Centers content from left to right */ 
+}
+
+.site-item {
+    display: inline;
+    padding: 20px;
+}
+
+.site-item a {
+    color: wheat;
+}
+
+.site-item:hover {
+    background-color: #aaaaaa;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.intro-container {
+    height: 100%;
+    background-color: grey;
+    padding-top: 60px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 2em 0;
+}
+
+.intro-name {
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Playfair Display';
+    font-size: 64px;
+    font-weight: lighter;
+    letter-spacing: 0.6em;
+    margin: 0;
+}
+
+.intro-welcome {
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Playfair Display';
+    font-weight: lighter;
+    letter-spacing: 0.3em;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%; /* Ensures that the image scales down proportionally within the available space without exceeding the original dimensions.*/
+    max-height: 100%; /* Ensures that the image scales down proportionally within the available space without exceeding the original dimensions.*/
+    background-color: grey;
+}
+
+.prof-pic {
+    height: auto;
+    width: 25%;
+    border-radius: 50%;
+}
+
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%; /* Ensures that the image scales down proportionally within the available space without exceeding the original dimensions.*/
+    max-height: 100%; /* Ensures that the image scales down proportionally within the available space without exceeding the original dimensions.*/
+    background-color: grey;
+}
+
+.link-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Allows justify-content: center to center it (left to right) */ 
+    justify-content: space-between; /* Centers content from left to right */ 
+}
+
+.link {
+    padding: 5px;
+}
+
+.link:hover {
+    background-color: #aaaaaa;
+}

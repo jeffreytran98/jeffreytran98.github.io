@@ -85,6 +85,31 @@ body {
     border-radius: 50%;
 }
 
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.text-container {
+    width: 32rem;
+}
+
+.text-container p {
+    margin: 1em 0;
+}
+
+.text-container :first-child {
+    color: blue;
+    margin-top: 0;
+}
+
+.text-container :last-child {
+    color: pink;
+    margin-bottom: 0;
+}
 
 .link-container {
     display: flex;

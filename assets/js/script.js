@@ -47,20 +47,9 @@ function deletingEffect() {
 	setTimeout(loopDeleting,1250);
 };
 
-function wordChange(word, new_word) {
-	document.getElementById(word).innerHTML = new_word
-}
-
-
-function transition(timing, timing_2) {
-	//timing is the number needed to fadeout completley and then change word instantly
-	//timing_2 is the number needed to fadein completely and then begin the LoopDelete and LoopType
-
-
-
-	$('#me').delay((timing)).fadeIn((timing - 1000), function(){})
-	$('#word').fadeIn(timing_2, function(){})
+function transition(timing_2) {
+    // Wait timing_2 and then start typing effect
 	setTimeout(typingEffect, timing_2)
 }
 
-transition(3000, 4000)
+transition(2500)

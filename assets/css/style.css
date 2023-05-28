@@ -73,6 +73,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: 3rem;
 }
 
 .typing-word-container p {
@@ -81,6 +82,11 @@ body {
 }
 
 
+@keyframes blink{
+    to {
+        opacity: .0;
+        }
+}
 
 
 

@@ -74,11 +74,20 @@ body {
     flex-direction: column;
     text-align: center;
     height: 3rem;
+
+    font-family: 'Playfair Display';
+    font-weight: lighter;
+    letter-spacing: 0.3em;
 }
 
 .typing-word-container p {
     font-size: 22px;
     margin: 0;
+}
+
+#words {
+    color: wheat;
+    text-decoration: underline;
 }
 
 

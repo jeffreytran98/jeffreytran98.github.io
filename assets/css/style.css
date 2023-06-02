@@ -110,6 +110,7 @@ body {
     background-color: grey;
     font-size: 1.2rem;
     text-align: justify;
+<<<<<<< HEAD
     padding: 60px 0;
 }
 
@@ -127,6 +128,25 @@ body {
 }
 
 .about-text-container :last-child {
+=======
+}
+
+.text-container {
+    width: 32rem;
+}
+
+.text-container p {
+    margin: 1em 0;
+}
+
+.text-container :first-child {
+    color: blue;
+    margin-top: 0;
+}
+
+.text-container :last-child {
+    color: pink;
+>>>>>>> c864cee (Added text container and some text for the about me section)
     margin-bottom: 0;
 }
 

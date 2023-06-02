@@ -139,16 +139,29 @@ body {
 }
 
 .link-list {
-    list-style-type: none;
-    padding: 0;
     display: flex; /* Allows justify-content: center to center it (left to right) */ 
     justify-content: space-between; /* Centers content from left to right */ 
+    list-style-type: none;
+    padding: 0;
+}
+.link-list li {
+    width: 50px;
+    height: 50px;
+}
+
+.link-list li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image will fill container without distortion */
 }
 
 .link {
-    padding: 5px;
+    padding: 10px;
 }
 
 .link:hover {
     background-color: #aaaaaa;
 }
+
+
+

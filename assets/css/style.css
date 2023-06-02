@@ -90,17 +90,6 @@ body {
     text-decoration: underline;
 }
 
-
-@keyframes blink{
-    to {
-        opacity: .0;
-        }
-}
-
-
-
-
-
 .photo-container {
     display: flex;
     justify-content: center;

@@ -1,4 +1,4 @@
-const words = ["Writing Code", "Analyzing Data", "Creating Dashboards"]
+const words = ["Writing Code", "Analyzing Data", "Creating Dashboards", "Running a Business"]
 
 let i = 0;
 let timer;

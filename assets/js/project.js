@@ -1,16 +1,40 @@
-const slides = document.querySelectorAll('.slide-container');
-let currentIndex = 0;
+// Grabs all slides with class (slide-container)
+var slides = document.getElementsByClassName('slide-container');
+var currentSlide = 0;
 
-function showSlide(index) {
-  slides.forEach((slide) => {
-    slide.classList.remove('active');
-  });
-  slides[index].classList.add('active');
+
+function showSlide(n) {
+  // First, hide all slides
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove('active');
+  }
+  
+  // show [nth] slide
+  slides[n].classList.add('active');
 }
 
+// iterate 'backwards' in the slides list, based on currentSlide
+function prevSlide() {
+  if (currentSlide > 0) {
+    currentSlide--;
+  } else {
+    currentSlide = slides.length - 1;
+  }
+  showSlide(currentSlide);
+}
+// iterate 'forwards' in the slides list, based on currentSlide
 function nextSlide() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  showSlide(currentIndex);
+  if (currentSlide < slides.length - 1) {
+    currentSlide++;
+  } else {
+    currentSlide = 0;
+  }
+  showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 1500); // Change slide every 3 seconds (adjust as needed)
+// Show the first slide
+showSlide(currentSlide);
+
+// when specific buttons get clicked, go prev or next
+document.getElementById('prevBtn').addEventListener('click', prevSlide);
+document.getElementById('nextBtn').addEventListener('click', nextSlide);

@@ -4,7 +4,6 @@ var currentSlide = 0;
 
 
 function showSlide(n) {  
-  console.log(n)
   // show [nth] slide
   slides[n].classList.add('active');
 }

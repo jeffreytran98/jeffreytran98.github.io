@@ -14,7 +14,7 @@
   }
 
 
-  /* Each individual image */
+  /* Each individual image's container */
   .slide-container {
     position: absolute;
 
@@ -27,12 +27,14 @@
 
     opacity: 0;
     transition: opacity 1s ease;
-
   }
   
+
   .slide-container.active {
-    opacity: 1;
-  }
+  opacity: 1;
+}
+
+
 
 .slide-container img {
     position: absolute;
@@ -44,6 +46,14 @@
     max-height: 100%;
 }
 
+
+
+
+
+
+
+
+
 #prevBtn,
 #nextBtn {
   position: absolute;
@@ -52,7 +62,6 @@
   padding: 10px;
   font-size: 12px;
 }
-
 
 
 #prevBtn {
